@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mcp-odoo-config
+  namespace: ia
+data:
+  ODOO_URL: https://train-adhoc-26-06-1.adhoc.ar
+  ODOO_DB: odoo
+  ODOO_USERNAME: joa@adhoc.inc
+  DEBUG: "1"

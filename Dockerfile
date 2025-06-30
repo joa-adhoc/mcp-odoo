@@ -2,6 +2,8 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
+EXPOSE 8000
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
@@ -34,4 +36,4 @@ RUN chmod +x run_server.py
 ENV PYTHONUNBUFFERED=1
 
 # Run the custom MCP server script instead of the module
-ENTRYPOINT ["python", "run_server.py"] 
+CMD ["python", "run_server.py"] 

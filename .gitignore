@@ -48,3 +48,6 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/ 
+
+# kub config
+kubernetes-config/mcp-odoo-secret.yaml
